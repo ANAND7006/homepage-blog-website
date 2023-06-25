@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Home page/Blog website" />
+    <title>Home page/Blog website</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* CSS FOR HEADER */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f5f5f5;
+      }
+
+      .header1 {
+        font-size: 25px;
+        font-family: cursive;
+        color: #000;
+        text-decoration: none;
+        margin-left: 30px;
+      }
+
+      .header1:hover {
+        -webkit-text-fill-color: rgb(0, 102, 255);
+        border: 5px solid red;
+        border-radius: 60%;
+        transform: translateY(10%);
+        transition-property: border-radius;
+        transition-duration: 5s;
+      }
+
+      /* CSS FOR NAV BAR */
+      .nav-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f5f5f5;
+      }
+
+      .nav-items a {
+        padding: 35px 20px;
+        text-decoration: none;
+        color: #000;
+        font-size: larger;
+      }
+
+      .school {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 80px;
+      }
+
+      .school-one h1 {
+        font-size: 40px;
+        text-transform: uppercase;
+        color: #333333;
+        margin: 10px 10px;
+      }
+
+      .school-one:hover {
+        -webkit-text-fill-color: rgb(255, 0, 234);
+      }
+
+      .school-one p {
+        font-size: 20px;
+        color: #585858;
+        margin: 10px 0;
+      }
+
+      .school img {
+        width: 450%;
+        height: 350px;
+        border-radius: 10px;
+        align-items: center;
+        margin-left: 300px;
+      }
+
+      .college {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 80px;
+        border: 2px solid #eeeeee;
+        margin: 5px 10px 20px 100px;
+      }
+
+      .college-one h1 {
+        font-size: 50px;
+        text-transform: uppercase;
+        color: #333333;
+        margin: 10px 10px;
+      }
+
+      .college-one:hover {
+        -webkit-text-fill-color: rgb(157, 255, 0);
+      }
+
+      .college-one p {
+        font-size: 20px;
+        color: #585858;
+        margin: 10px 0;
+      }
+
+      .college img {
+        max-width: 90%;
+        height: 300px;
+        border-radius: 10px;
+        align-items: center;
+      }
+
+      .box {
+        display: flex;
+        padding: 50px;
+      }
+
+      .csk {
+        border: 3px solid #eeeeee;
+        height: 100vh;
+        width: 60vh;
+        margin-right: 100px;
+      }
+
+      .csk img {
+        height: 350px;
+        width: 350px;
+      }
+
+      .csk h1 {
+        font-size: 50px;
+        text-transform: uppercase;
+        color: #333333;
+        margin: 10px 10px;
+      }
+
+      .csk:hover {
+        -webkit-text-fill-color: rgba(255, 238, 0, 0.918);
+      }
+
+      .csk p {
+        font-size: 20px;
+        color: #585858;
+        margin: 10px 0;
+      }
+
+      .onepiece {
+        border: 3px solid #eeeeee;
+        height: 100vh;
+        width: 60vh;
+        margin-right: 100px;
+      }
+
+      .onepiece img {
+        height: 350px;
+        width: 350px;
+      }
+
+      .onepiece h1 {
+        font-size: 50px;
+        text-transform: uppercase;
+        color: #333333;
+        margin: 10px 10px;
+      }
+
+      .onepiece:hover {
+        -webkit-text-fill-color: rgba(255, 0, 0, 0.295);
+      }
+
+      .onepiece p {
+        font-size: 20px;
+        color: #585858;
+        margin: 10px 0;
+      }
+
+      .bgmi {
+        border: 3px solid #eeeeee;
+        height: 100vh;
+        width: 60vh;
+      }
+
+      .bgmi img {
+        height: 350px;
+        width: 350px;
+      }
+
+      .bgmi h1 {
+        font-size: 50px;
+        text-transform: uppercase;
+        color: #333333;
+        margin: 10px 10px;
+      }
+
+      .bgmi:hover {
+        -webkit-text-fill-color: aqua;
+      }
+
+      .bgmi p {
+        font-size: 20px;
+        color: #585858;
+        margin: 10px 0;
+      }
+
+      .code {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 80px;
+        border: 2px solid #eeeeee;
+        margin: 5px 10px 20px 100px;
+      }
+
+      .code-one h1 {
+        font-size: 50px;
+        text-transform: uppercase;
+        color: #333333;
+        margin: 10px 10px;
+      }
+
+      .code-one:hover {
+        -webkit-text-fill-color: rgba(255, 0, 85, 0.596);
+      }
+
+      .code-one p {
+        font-size: 20px;
+        color: #585858;
+        margin: 10px 0;
+      }
+
+      .code img {
+        max-width: 90%;
+        height: 300px;
+        border-radius: 10px;
+        align-items: center;
+      }
+
+      /* CSS FOR FOOTER */
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #302f49;
+        padding: 40px 80px;
+      }
+
+      .footer .copy {
+        color: #fff;
+      }
+
+      .bottom-links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 40px 0;
+      }
+
+      .bottom-links .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 40px;
+      }
+
+      .bottom-links .links span {
+        font-size: 20px;
+        color: #fff;
+        text-transform: uppercase;
+        margin: 10px 0;
+      }
+
+      .bottom-links .links a {
+        text-decoration: none;
+        color: #a1a1a1;
+        padding: 10px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- STARTING OF HEADER -->
+    <header>
+      <div class="header1">
+        <h1>R ANAND</h1>
+      </div>
+      <nav class="nav-items">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#"><i>facebook</i></a>
+        <a href="https://twitter.com/Anand70824619"><i>twitter</i></a>
+        <a href="https://www.instagram.com/anandgp5/"><i>instagram</i></a>
+      </nav>
+    </header>
+    <!-- STARTING OF MAIN -->
+    <main>
+      <!-- THERE IS ONE PARENT DIV AND ONE CHIND DIV -->
+      <div class="school">
+        <div class="school-one">
+          <h1>This is my school</h1>
+          <p>
+            School is the place where we learn to read and write. It is the most
+            crucial place for a student, and it helps us to learn new things.
+            The teachers are always helpful and teach us important things in
+            life. We must always be regular to school as missing classes can
+            lead to problems during exams.
+          </p>
+          <a href="https://www.facebook.com/NanjappaSchool/">Read More</a>
+        </div>
+        <img src="./school.jpg" alt="school" />
+      </div>
+
+      <!-- THERE IS ONE PARENT DIV AND ONE CHIND DIV -->
+      <div class="college">
+        <div class="college-one">
+          <h1>And My College</h1>
+          <p>
+            My collage is something that all of us can take inspiration from and
+            I will always cherish this memory. It was a very special moment in
+            my life and I still remember it like it was yesterday.
+          </p>
+          <a href="https://rvscas.ac.in/">Read More</a>
+        </div>
+        <img src="./college.jpg" alt="college" />
+      </div>
+
+      <!-- THERE IS ONE PARENT DIV AND THREE CHILD DIV -->
+      <div class="box">
+        <div class="csk">
+          <img src="./csk.jfif" alt="csk" />
+          <div cless="csk1">
+            <h1>favorite team</h1>
+            <p>
+              Chennai Super Kings (CSK) is a professional cricket franchise
+              based in Chennai, Tamil Nadu competes...
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Chennai_Super_Kings"
+              >Read More</a
+            >
+          </div>
+        </div>
+        <div class="onepiece">
+          <img src="./onepiece.jfif" alt="onepiece" />
+          <div class="onepiece1">
+            <h1>favorite anime</h1>
+            <p>
+              One Piece (stylized in all caps) is a Japanese manga series
+              written and illustrated by Eiichiro Oda...
+            </p>
+            <a href="https://en.wikipedia.org/wiki/One_Piece">Read More</a>
+          </div>
+        </div>
+        <div class="bgmi">
+          <img src="./bgmi.jfif" alt="bgmi" />
+          <div class="bgmi1">
+            <h1>favorite game</h1>
+            <p>
+              Battlegrounds Mobile India (BGMI, previously known as PUBG Mobile
+              India) is the Indian version of PUBG Mobile, ...
+            </p>
+            <a href="https://www.battlegroundsmobileindia.com/">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- THERE IS ONE PARENT DIV AND CHIND DIV -->
+      <div class="code">
+        <div class="code-one">
+          <h1>love to codeing</h1>
+          <p>
+            Coding is how humans are able to talk with computers. Coding
+            involves communicating and giving instructions for different actions
+            we want our computers to perform using a computer programming
+            language.
+          </p>
+          <a
+            href="https://en.wikipedia.org/wiki/Programming_language#:~:text=A%20programming%20language%20is%20a,a%20kind%20of%20computer%20language."
+            >Read More</a
+          >
+        </div>
+        <img src="./codeing.png" alt="coding" />
+      </div>
+    </main>
+    <!-- STARTING OF FOOTER -->
+    <footer class="footer">
+      <div class="copy">&copy; 2023 R ANAND</div>
+      <div class="bottom-links">
+        <div class="links">
+          <span>More Info</span>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="links">
+          <span>Social Links</span>
+          <a href="#"><i>facebook</i></a>
+          <a href="https://twitter.com/Anand70824619"><i>twitter</i></a>
+          <a href="https://www.instagram.com/anandgp5/"><i>instagram</i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
